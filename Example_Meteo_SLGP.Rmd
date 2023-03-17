@@ -1,0 +1,277 @@
+---
+title: 'An example of SLGP density field estimation: Meteorological data'
+author: "Athénaïs Gautier"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## *Origin of the data*
+
+*The data are provided by the Swiss Federal Office of Meteo and of Topology.*
+
+```{r cars}
+# Dataset
+X <- read.csv("./datasets/data_meteo.txt", encoding = "latin1")
+stations <- unique(X[, c(1, 8:13)])
+stations$Station
+```
+
+*We also include some packages, mostly for plots and spatial data representation*
+
+```{r}
+library(grid)
+library(gridExtra)
+library(lemon)
+library(ggrepel)
+library(ggpubr)
+library(metR)
+
+
+world_map <- map_data("world", region="Switzerland") #Load a map
+
+```
+
+## *Loading the SLGP functions*
+
+```{r }
+
+# Functions and packages
+to_source <- list.files(path = "./functions_to_source/")
+packages_needed <- c()
+for(file in to_source){
+  source(paste0("./functions_to_source/", file))
+  library(readr)
+  txt <- read_file(paste0("./functions_to_source/", file))
+  library(qdapRegex)
+  packs <- rm_between(txt, c("library(", "require("), c(")", ")"), extract=TRUE)
+  packages_needed<- c(packages_needed, packs[[1]])
+}
+library(conflicted)
+conflict_prefer("dinvchisq", "LaplacesDemon") 
+conflict_prefer("dinvgamma", "LaplacesDemon") 
+conflict_prefer("rinvchisq", "LaplacesDemon") 
+conflict_prefer("rinvgamma", "LaplacesDemon") 
+```
+
+*Our implementation relies on some CRAN packages*
+
+```{r}
+packages_needed <- unique(packages_needed)
+packages_needed <- packages_needed[!is.na(packages_needed)]
+packages_needed
+for(packname in packages_needed){
+  library(packname, character.only=TRUE)
+}
+rm(file, to_source, packname, packages_needed, packs, txt)
+
+```
+
+*We prepare the data*
+
+```{r}
+#Ready to normalise
+range_temp <- c(-30, 40)
+range_lat <- range(world_map$lat)
+range_long <- range(world_map$long)
+range_height <- c(0, 4810)
+
+#Extract the relevant columns
+samples <- X[, c("tre200d0", "Latitude", "Longitude", "Station.height.m..a..sea.level")]
+# Renormalise
+samples$tre200d0 <- (samples$tre200d0 - range_temp[1])/diff(range_temp)
+samples$Latitude <- (samples$Latitude - range_lat[1])/diff(range_lat)
+samples$Longitude <- (samples$Longitude - range_long[1])/diff(range_long)
+samples$Station.height.m..a..sea.level <- (samples$Station.height.m..a..sea.level - range_height[1])/diff(range_height)
+
+colnames(samples) <- c("t", paste0("x", seq(3)))
+summary(samples)
+stations_rescaled <- unique(samples[, startsWith(colnames(samples), "x")])
+name_index <- paste0("x", seq(3))
+```
+
+## *Model specification*
+
+```{r}
+
+#Specify model: basis functions
+set.seed(1)
+par_basis_functions <- list(type="RFF",
+                            nfreq=250,
+                            dimension=4,
+                            nu=5/2,
+                            seed=1)
+initialize_basis_functions(par_basis_functions, verbose=1)
+par_basis_functions$order_tot
+
+starting_lengthscale <- 0.1
+
+#Ensure numerical stability of the prior with a good choice of sigma
+set.seed(1)
+range_list <- heuristic_find_variance(par_basis_functions, lengthscale=starting_lengthscale,
+                                      nsimu=100, grid_size=21, plot=TRUE)
+range_GP <- mean(range_list)
+starting_sigma <- 5/range_GP
+```
+
+*We can visualise the corresponding prior with plenty of colourful curves (one per realisation), superposed on top of the available histograms and their point-wise kernel density estimation.*
+
+```{r}
+
+# Show prior
+df_plot <- evaluate_SLGP_grid(epsilon=matrix(starting_sigma* rnorm(par_basis_functions$order_tot*10), nrow=10), 
+                               Xx=stations_rescaled, 
+                               name_index, 
+                               lengthscale=starting_lengthscale,
+                               par_basis_functions=par_basis_functions)
+
+stations_rescaled$Station <- stations$Station
+stations_rescaled$inBE <- stations$Canton=="BE"
+df_plot <- df_plot %>%
+   dplyr::select(-starts_with("cdf"))%>%
+   pivot_longer(-c("t", "x3"))
+
+df_plot <- merge(df_plot, stations_rescaled)
+samples <- merge(samples, stations_rescaled)
+samples <- samples[, c("t", name_index, "Station")]
+samples$inBE <- samples$Station %in% stations$Station[stations$Canton=="BE"]
+ggplot()+
+  geom_histogram(data=samples, mapping=aes(x=t*diff(range_temp)+range_temp[1],
+                                           y=..density..),
+                 col="grey70", fill="grey95", size=0.5, 
+                 breaks=seq(range_temp[1], range_temp[2], 2))+
+  geom_density(data=samples, mapping=aes(x=t*diff(range_temp)+range_temp[1],
+                                         y=..density..), lty=1,
+               alpha=0, col="black")+
+  geom_line(data=df_plot,
+            mapping=aes(x=t*diff(range_temp)+range_temp[1], 
+                        y=value/diff(range_temp), col=name),
+            alpha=0.5)+
+  facet_wrap(paste0(Station, "\n[", 
+                    x3*diff(range_height)+range_height[1],
+                    "m.]")~., ncol=5)+
+  theme_bw()+
+  ggtitle("Empirical distribution of temperatures")+
+  theme(plot.title=element_text(hjust=0.5),
+        legend.position = "none")+
+  xlab("Temperature value [°C]")+
+  ylab("Temperature distribution (marginalized over time)")+
+  geom_rect(data = subset(stations_rescaled, stations_rescaled$inBE),
+            inherit.aes = FALSE,
+            fill = "cornflowerblue", col="blue", lty=2,
+            alpha=0.2,
+            xmin = -100, 
+            xmax = 100,
+            ymin = -1, 
+            ymax = 1)
+samples$Station <- NULL
+samples$inBE <- NULL
+stations_rescaled$Station <- NULL
+stations_rescaled$inBE <- NULL
+```
+
+*Perform the optimisation:*
+
+```{r}
+### Optim
+set.seed(1)
+starting_point<- rnorm(par_basis_functions$order_tot)*starting_sigma
+res_opt <- compute_MAP_without_hyperpar(samples, name_index,
+                                        par_basis_functions=par_basis_functions,
+                                        starting_point = starting_point,
+                                        starting_sigma = starting_sigma,   
+                                        starting_lengthscale=starting_lengthscale,
+                                        print_level=1)
+```
+
+```{r}
+df_MAP <- evaluate_SLGP_grid(epsilon=res_opt$epsilon, 
+                               Xx=stations_rescaled, 
+                               name_index, 
+                               lengthscale=starting_lengthscale,
+                               par_basis_functions=par_basis_functions)
+ stations_rescaled$Station <- stations$Station
+  
+ df_plot <- merge(df_plot, stations_rescaled)
+ samples <- merge(samples, stations_rescaled)
+ samples <- samples[, c("t", name_index, "Station")]
+ 
+ df_MAP %>%
+   ggplot()+
+   geom_histogram(data=samples,
+                  mapping=aes(x=t*diff(range_temp)+range_temp[1], y=..density..), col="grey", alpha=0.1,
+                  breaks=seq(range_temp[1], range_temp[2],, 31))+
+   geom_line(mapping=aes(x=t*diff(range_temp)+range_temp[1], y=pdf/diff(range_temp)), col="red",
+             alpha=1)+
+   facet_wrap(Station~.)+
+   theme_bw()+
+   ggtitle("MAP")+
+   theme(legend.position = "none")+
+   xlab("Temperature value [°C]")+
+   ylab("Temperature distribution (marginalized over time)")
+ 
+samples$Station <- NULL
+stations_rescaled$Station <- NULL
+```
+
+```{r}
+
+Fit <- run_pCN(starting_point=res_opt$epsilon,
+               samples, Iterations = 200000, Thinning = 2000, 
+               par_basis_functions=par_basis_functions,
+               name_index=name_index,
+               starting_lengthscale = res_opt$lengthscale,
+               starting_sigma = res_opt$sigma,
+               n.approxInt = 101, 
+               discretization.size = 101,
+               beta=0.05, option="pCN")
+Consort(Fit)
+
+df_MCMC <- evaluate_SLGP_grid(epsilon=Fit$Posterior1, 
+                              Xx=stations_rescaled, 
+                              name_index, 
+                              lengthscale=res_opt$lengthscale,
+                              par_basis_functions=par_basis_functions)
+```
+
+```{r}
+stations_rescaled$Station <- stations$Station
+stations_rescaled$inBE <- stations$Canton == "BE"
+df_MAP <- merge(df_MAP, stations_rescaled)
+df_MCMC <- merge(df_MCMC, stations_rescaled)
+samples <- merge(samples, stations_rescaled)
+samples <- samples[, c("t", name_index, "Station")]
+samples$inBE <- ifelse(X$Canton == "BE", "In Bern (test)", "Not in Bern (train)")
+df_MCMC$mean_pdf <- rowMeans(dplyr::select(df_MCMC, starts_with("pdf")))
+df_MCMC$mean_cdf <- rowMeans(dplyr::select(df_MCMC, starts_with("cdf")))
+df_plot <- df_MCMC[, c("t", "x1", "x2", "x3", "Station", "mean_pdf", "mean_cdf")]
+
+df_MCMC %>%
+  dplyr::select(c("t", "x1", "x2", "x3", "Station"), starts_with("pdf"))%>%
+  pivot_longer(-c("t", "x1", "x2", "x3", "Station"))%>%
+  ggplot()+
+  geom_histogram(data=samples,
+                 mapping=aes(x=t*diff(range_temp)+range_temp[1], y=..density..,
+                             fill=inBE), col="grey", alpha=0.2,
+                 breaks=seq(range_temp[1], range_temp[2],, 31))+
+  geom_line(mapping=aes(x=t*diff(range_temp)+range_temp[1], y=value/diff(range_temp), group=name), col="cornflowerblue",
+            alpha=0.1)+
+  geom_line(data=df_plot, mapping=aes(x=t*diff(range_temp)+range_temp[1], y=mean_pdf/diff(range_temp)), 
+            col="blue", lty=2)+
+  geom_line(data=df_MAP, mapping=aes(x=t*diff(range_temp)+range_temp[1], y=pdf/diff(range_temp)), 
+            col="red", lty=1)+
+  # facet_wrap(Station~.)+
+  theme_bw()+
+  ggtitle("Posterior (MCMC)")+
+  theme(legend.position = "bottom")+
+  labs(fill="Localisation of the station")+
+  xlab("Temperature value [°C]")+
+  facet_wrap(paste0(Station, "\n[", 
+                    x3*diff(range_height)+range_height[1],
+                    "m.]")~., ncol=5)+
+  scale_fill_manual(values=c( "cornflowerblue", "grey"))+
+  scale_colour_manual(values=c("black", "blue"))+
+  ylab("Temperature distribution (marginalized over time)")
+```

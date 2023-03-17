@@ -1,0 +1,1486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <HEADERSECTION SENDER="geocat.ch" VERSION="2.3">
+    <MODELS />
+  </HEADERSECTION>
+  <DATASECTION>
+    <GM03_2_1Comprehensive.Comprehensive BID="xw425767a">
+      <GM03_2_1Core.Core.MD_Metadata TID="xN130166209">
+        <fileIdentifier>7eeb5314-f988-4e70-be61-07bfafc10439</fileIdentifier>
+        <language>de</language>
+        <characterSet>utf8</characterSet>
+        <dateStamp>2016-01-06T09:55:46</dateStamp>
+        <metadataStandardName>GM03 2+</metadataStandardName>
+        <hierarchyLevel>
+          <GM03_2_1Core.Core.MD_ScopeCode_>
+            <value>dataset</value>
+          </GM03_2_1Core.Core.MD_ScopeCode_>
+        </hierarchyLevel>
+        <dataSetURI>http://www.swisstopo.admin.ch/internet/swisstopo/de/home/products/height/dhm25.html</dataSetURI>
+        <distributionInfo REF="xN1973911683" />
+      </GM03_2_1Core.Core.MD_Metadata>
+      <GM03_2_1Core.Core.MD_Distribution TID="xN1973911683" />
+      <GM03_2_1Core.Core.MD_DistributiondistributionFormat>
+        <MD_Distribution REF="xN1973911683" />
+        <distributionFormat REF="xN2071960012" />
+      </GM03_2_1Core.Core.MD_DistributiondistributionFormat>
+      <GM03_2_1Comprehensive.Comprehensive.MD_Format TID="xN2071960012">
+        <name>ESRI ArcInfo ASCII GRID</name>
+        <version>-</version>
+      </GM03_2_1Comprehensive.Comprehensive.MD_Format>
+      <GM03_2_1Core.Core.MD_DistributiondistributionFormat>
+        <MD_Distribution REF="xN1973911683" />
+        <distributionFormat REF="xN350542179" />
+      </GM03_2_1Core.Core.MD_DistributiondistributionFormat>
+      <GM03_2_1Comprehensive.Comprehensive.MD_Format TID="xN350542179">
+        <name>ASCII XYZ</name>
+        <version>-</version>
+      </GM03_2_1Comprehensive.Comprehensive.MD_Format>
+      <GM03_2_1Core.Core.MD_DistributiondistributionFormat>
+        <MD_Distribution REF="xN1973911683" />
+        <distributionFormat REF="xN1733335857" />
+      </GM03_2_1Core.Core.MD_DistributiondistributionFormat>
+      <GM03_2_1Comprehensive.Comprehensive.MD_Format TID="xN1733335857">
+        <name>DXF</name>
+        <version>14</version>
+      </GM03_2_1Comprehensive.Comprehensive.MD_Format>
+      <GM03_2_1Comprehensive.Comprehensive.MD_DigitalTransferOptions TID="xN1373078610">
+        <MD_Distribution REF="xN1973911683" />
+      </GM03_2_1Comprehensive.Comprehensive.MD_DigitalTransferOptions>
+      <GM03_2_1Core.Core.CI_OnlineResource TID="xN1284148783">
+        <function>download</function>
+        <name>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>toposhop</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </name>
+        <linkage>
+          <GM03_2_1Core.Core.PT_FreeURL>
+            <URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>de</language>
+                <plainURL>http://www.toposhop.admin.ch/de/shop/products/height/dhm25200_1</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>fr</language>
+                <plainURL>http://www.toposhop.admin.ch/fr/shop/products/height/dhm25200_1</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>en</language>
+                <plainURL>http://www.toposhop.admin.ch/en/shop/products/height/dhm25200_1</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+            </URLGroup>
+          </GM03_2_1Core.Core.PT_FreeURL>
+        </linkage>
+        <MD_DigitalTransferOptions REF="xN1373078610" />
+      </GM03_2_1Core.Core.CI_OnlineResource>
+      <GM03_2_1Core.Core.MD_Metadatacontact>
+        <contact REF="xN1014290875" />
+        <MD_Metadata REF="xN130166209" />
+        <role>
+          <GM03_2_1Core.Core.CI_RoleCode_>
+            <value>pointOfContact</value>
+          </GM03_2_1Core.Core.CI_RoleCode_>
+        </role>
+      </GM03_2_1Core.Core.MD_Metadatacontact>
+      <GM03_2_1Core.Core.CI_ResponsibleParty TID="xN1014290875">
+        <individualLastName>metadata</individualLastName>
+        <electronicalMailAddress>
+          <GM03_2_1Core.Core.URL_>
+            <value>metadata@swisstopo.ch</value>
+          </GM03_2_1Core.Core.URL_>
+        </electronicalMailAddress>
+        <organisationName>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Federal Office of Topography</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Bundesamt für Landestopografie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Office fédéral de topographie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Ufficio federale di topografia</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>rm</language>
+                <plainText>Bundesamt für Landestopografie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </organisationName>
+        <positionName>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Metadata contact</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Metadaten</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Métadonnées</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Metadati</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>rm</language>
+                <plainText>Metadaten</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </positionName>
+        <organisationAcronym>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>rm</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </organisationAcronym>
+        <linkage>
+          <GM03_2_1Core.Core.PT_FreeURL>
+            <URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>en</language>
+                <plainURL>http://www.swisstopo.admin.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>de</language>
+                <plainURL>http://www.swisstopo.admin.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>fr</language>
+                <plainURL>http://www.swisstopo.admin.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>it</language>
+                <plainURL>http://www.swisstopo.admin.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>rm</language>
+                <plainURL>http://www.swisstopo.admin.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+            </URLGroup>
+          </GM03_2_1Core.Core.PT_FreeURL>
+        </linkage>
+        <address REF="xN947258815" />
+        <contactInfo REF="xN1292939596" />
+      </GM03_2_1Core.Core.CI_ResponsibleParty>
+      <GM03_2_1Core.Core.CI_Address TID="xN947258815">
+        <streetName>Seftigenstrasse</streetName>
+        <streetNumber>264</streetNumber>
+        <postalCode>3084</postalCode>
+        <city>Wabern</city>
+        <country>CH</country>
+      </GM03_2_1Core.Core.CI_Address>
+      <GM03_2_1Core.Core.CI_Contact TID="xN1292939596">
+        <hoursOfService>08h30 - 11h00 / 14h00 - 16h00 GMT+1</hoursOfService>
+      </GM03_2_1Core.Core.CI_Contact>
+      <GM03_2_1Core.Core.CI_Telephone TID="xN463696258">
+        <number>+41 58 469 01 11</number>
+        <numberType>mainNumber</numberType>
+        <CI_ResponsibleParty REF="xN1014290875" />
+      </GM03_2_1Core.Core.CI_Telephone>
+      <GM03_2_1Core.Core.CI_Telephone TID="xN1047276984">
+        <number>+41 58 469 04 59</number>
+        <numberType>facsimile</numberType>
+        <CI_ResponsibleParty REF="xN1014290875" />
+      </GM03_2_1Core.Core.CI_Telephone>
+      <GM03_2_1Core.Core.referenceSystemInfoMD_Metadata>
+        <referenceSystemInfo REF="xw425767aac27b1" />
+        <MD_Metadata REF="xN130166209" />
+      </GM03_2_1Core.Core.referenceSystemInfoMD_Metadata>
+      <GM03_2_1Core.Core.MD_ReferenceSystem TID="xw425767aac27b1">
+        <referenceSystemIdentifier REF="xw425767aac27b1b1b1" />
+      </GM03_2_1Core.Core.MD_ReferenceSystem>
+      <GM03_2_1Comprehensive.Comprehensive.RS_Identifier TID="xw425767aac27b1b1b1">
+        <code>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>EPSG:21781</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>EPSG:21781</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>EPSG:21781</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>EPSG:21781</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </code>
+      </GM03_2_1Comprehensive.Comprehensive.RS_Identifier>
+      <GM03_2_1Core.Core.referenceSystemInfoMD_Metadata>
+        <referenceSystemInfo REF="xw425767aac29b1" />
+        <MD_Metadata REF="xN130166209" />
+      </GM03_2_1Core.Core.referenceSystemInfoMD_Metadata>
+      <GM03_2_1Core.Core.MD_ReferenceSystem TID="xw425767aac29b1">
+        <referenceSystemIdentifier REF="xw425767aac29b1b1b1" />
+      </GM03_2_1Core.Core.MD_ReferenceSystem>
+      <GM03_2_1Comprehensive.Comprehensive.RS_Identifier TID="xw425767aac29b1b1b1">
+        <code>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>EPSG:5728</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>EPSG:5728</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>EPSG:5728</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>EPSG:5728</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </code>
+      </GM03_2_1Comprehensive.Comprehensive.RS_Identifier>
+      <GM03_2_1Comprehensive.Comprehensive.MD_DataIdentification TID="xN1518805464">
+        <status>
+          <GM03_2_1Core.Core.MD_ProgressCode_>
+            <value>completed</value>
+          </GM03_2_1Core.Core.MD_ProgressCode_>
+        </status>
+        <abstract>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Das digitale Höhenmodell DHM25 / 200 ist ein Datensatz, welcher die dreidimensionale Form der Erdoberfläche beschreibt. Es handelt sich um eine Höhenmatrix mit einer Maschenweite von 200 m. Er wurde aus dem Matrixmodell DHM25, welches eine Maschenweite von 25m hat, abgeleitet. Das DHM25 / 200 gibt die Form der rohen Erdoberfläche ohne Bewuchs und Bebauung wieder. Seen werden mit der Seeoberfläche dargestellt. DHM25 / 200 kann gratis heruntergeladen werden.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Le modèle numérique du terrain MNT25 / 200 est un jeu de données qui décrit la surface terrestre en trois dimensions. Il se présente sous la forme d’une matrice d'altitude avec une maille de 200 m. Il a été obtenu par un rééchantillonage du modèle matricielle MNT25 qui a une maille de 25m. Le MNT25 / 200 fournit les formes brutes de la surface terrestre, sans végétation ni construction. es lacs sont représentés par l'altitude de leur surface. MNT25 / 200 peut être téléchargé gratuitement.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>The digital height model DHM25 / 200 is a data set representing the three-dimensional form of the earth's surface. It is a height matrix with a 200-m grid. It has been resampled from the DHM25 matrix model, which has a 25-m grid. he DHM25 represents the topography of the earth's surface without vegetation or built up areas. Lakes are represented by their surface. DHM25 / 200 can be freely downloaded.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Il modello altimetrico MDT25 / 200m é un set di dati che descrive la superficie terrestre in tre dimensioni. Si tratta di una matrice altitudinale con una maglia di 200m. Il modello a matrice è stato sviluppato mediante un ridimensionamento del modello a matrice MDT25 che ha una maglia di 25 m.L’MDT25 / 200m presenta le forme grezze della superficie terreste, senza vegetazione né costruzioni.I laghi sono rappresentati dall’altitudine della loro superficie. MDT25 / 200 può essere scaricato gratuitamente.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </abstract>
+        <MD_Metadata REF="xN130166209" />
+        <citation REF="xN1146307883" />
+        <spatialRepresentationType>
+          <GM03_2_1Core.Core.MD_SpatialRepresentationTypeCode_>
+            <value>grid</value>
+          </GM03_2_1Core.Core.MD_SpatialRepresentationTypeCode_>
+        </spatialRepresentationType>
+        <language>
+          <CodeISO.LanguageCodeISO_>
+            <value>de</value>
+          </CodeISO.LanguageCodeISO_>
+        </language>
+        <characterSet>
+          <GM03_2_1Core.Core.MD_CharacterSetCode_>
+            <value>utf8</value>
+          </GM03_2_1Core.Core.MD_CharacterSetCode_>
+        </characterSet>
+        <topicCategory>
+          <GM03_2_1Core.Core.MD_TopicCategoryCode_>
+            <value>elevation</value>
+          </GM03_2_1Core.Core.MD_TopicCategoryCode_>
+        </topicCategory>
+        <basicGeodataID>41.4</basicGeodataID>
+        <basicGeodataIDType>federal</basicGeodataIDType>
+      </GM03_2_1Comprehensive.Comprehensive.MD_DataIdentification>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citation TID="xN1146307883">
+        <title>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Das digitale Höhenmodell der Schweiz mit einer Maschenweite von 200 m</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Le modéle numérique de terrain de la Suisse avec une maille de 200m</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>The digital height model of Switzerland with a 200m grid</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Il modello altitudinale della Svizzera con una maglia di 200m</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </title>
+        <alternateTitle>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>DHM25 / 200</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>MNT25 / 200</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>MDT25 / 200</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>DHM25 / 200</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </alternateTitle>
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citation>
+      <GM03_2_1Core.Core.CI_Date TID="xw425767aac31b1b1b1b5b1">
+        <date>2010-01-01</date>
+        <dateType>publication</dateType>
+        <CI_Citation REF="xN1146307883" />
+      </GM03_2_1Core.Core.CI_Date>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+        <identifier REF="xN372595923" />
+        <CI_Citation REF="xN1146307883" />
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+      <GM03_2_1Core.Core.MD_Identifier TID="xN372595923">
+        <code>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>41.3</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </code>
+      </GM03_2_1Core.Core.MD_Identifier>
+      <GM03_2_1Core.Core.MD_IdentificationpointOfContact>
+        <pointOfContact REF="xN1689650839" />
+        <MD_Identification REF="xN1518805464" />
+        <role>
+          <GM03_2_1Core.Core.CI_RoleCode_>
+            <value>pointOfContact</value>
+          </GM03_2_1Core.Core.CI_RoleCode_>
+        </role>
+      </GM03_2_1Core.Core.MD_IdentificationpointOfContact>
+      <GM03_2_1Core.Core.CI_ResponsibleParty TID="xN1689650839">
+        <individualLastName>geodata</individualLastName>
+        <electronicalMailAddress>
+          <GM03_2_1Core.Core.URL_>
+            <value>geodata@swisstopo.ch</value>
+          </GM03_2_1Core.Core.URL_>
+        </electronicalMailAddress>
+        <organisationName>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Federal Office of Topography</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Bundesamt für Landestopografie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Office fédéral de topographie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Ufficio federale di topografia</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>rm</language>
+                <plainText>Bundesamt für Landestopografie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </organisationName>
+        <positionName>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Geodata Distribution</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Geodatenabgabe</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Distribution des géodonnées</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Distribuzione di geodati</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>rm</language>
+                <plainText>Geodatenabgabe</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </positionName>
+        <organisationAcronym>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>rm</language>
+                <plainText>swisstopo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </organisationAcronym>
+        <linkage>
+          <GM03_2_1Core.Core.PT_FreeURL>
+            <URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>en</language>
+                <plainURL>http://www.swisstopo.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>de</language>
+                <plainURL>http://www.swisstopo.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>fr</language>
+                <plainURL>http://www.swisstopo.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>it</language>
+                <plainURL>http://www.swisstopo.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+              <GM03_2_1Core.Core.PT_URLGroup>
+                <language>rm</language>
+                <plainURL>http://www.swisstopo.ch</plainURL>
+              </GM03_2_1Core.Core.PT_URLGroup>
+            </URLGroup>
+          </GM03_2_1Core.Core.PT_FreeURL>
+        </linkage>
+        <address REF="xN712148829" />
+        <contactInfo REF="xN701119354" />
+      </GM03_2_1Core.Core.CI_ResponsibleParty>
+      <GM03_2_1Core.Core.CI_Address TID="xN712148829">
+        <streetName>Seftigenstrasse</streetName>
+        <streetNumber>264</streetNumber>
+        <postalCode>3084</postalCode>
+        <city>Wabern</city>
+        <country>CH</country>
+      </GM03_2_1Core.Core.CI_Address>
+      <GM03_2_1Core.Core.CI_Contact TID="xN701119354" />
+      <GM03_2_1Core.Core.CI_Telephone TID="xN864731976">
+        <number>+41 58 469 01 11</number>
+        <numberType>mainNumber</numberType>
+        <CI_ResponsibleParty REF="xN1689650839" />
+      </GM03_2_1Core.Core.CI_Telephone>
+      <GM03_2_1Core.Core.CI_Telephone TID="xN407047582">
+        <number>+41 58 469 04 59</number>
+        <numberType>facsimile</numberType>
+        <CI_ResponsibleParty REF="xN1689650839" />
+      </GM03_2_1Core.Core.CI_Telephone>
+      <GM03_2_1Comprehensive.Comprehensive.MD_MaintenanceInformation TID="xN403335628">
+        <maintenanceAndUpdateFrequency>notPlanned</maintenanceAndUpdateFrequency>
+        <maintenanceNote>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Der Nachführungsstand der Elemente des Basismodells entspricht demjenigen der Ersterfassung, mit Ausnahme der Gletschergebiete, welche gemäss dem im Winter 2000/2001 verfügbaren Kartenstand nachgeführt sind.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>The status of the DHM25 corresponds to that of the initial capture and digitization of the elements for the basis model except for glacial regions, which were updated in winter 2000/2001.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>L’état de mise à jour des éléments du modèle de base correspond à celui de la saisie initiale, exception faite des régions des glaciers qui ont été mises à jour sur la base des cartes disponibles en hiver 2000/⁄2001.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </maintenanceNote>
+        <MD_Identification REF="xN1518805464" />
+      </GM03_2_1Comprehensive.Comprehensive.MD_MaintenanceInformation>
+      <GM03_2_1Comprehensive.Comprehensive.MD_BrowseGraphic TID="xN643493532">
+        <fileName>http://www.swisstopo.admin.ch/internet/swisstopo/de/home/products/height.parsys.000100.Image.gif</fileName>
+        <fileDescription>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>DHM25 Matrixmodell - 3D Visualisierung</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>MNT25 modèle matricielle - visualisation 3D</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>DHM25 matrix model - 3D visualisation</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </fileDescription>
+        <MD_Identification REF="xN1518805464" />
+      </GM03_2_1Comprehensive.Comprehensive.MD_BrowseGraphic>
+      <GM03_2_1Core.Core.descriptiveKeywordsMD_Identification>
+        <descriptiveKeywords REF="xN1141682524" />
+        <MD_Identification REF="xN1518805464" />
+      </GM03_2_1Core.Core.descriptiveKeywordsMD_Identification>
+      <GM03_2_1Core.Core.MD_Keywords TID="xN1141682524">
+        <keyword>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Isophysis</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Isophyse</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Isofise</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Isophyse</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Terrain representation</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Geländedarstellung</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>rappresentazione dell terreno</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Représentation du terrain</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Geodata</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Geodaten</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Geodati</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Géodonnées</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Digital terrain model DTM</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Digitales Terrainmodell DTM, Geländemodell DGM</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>modello digitale del terreno DTM</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Modèle numérique de terrain MNT</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Hillshading</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Schummerung</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Ombreggiatura</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Ombrage</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>GIS (Geographic Information Systems)</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>(GIS) Geografisches InformationSystem)</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>GIS</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>SIG (Système d'Information Géographique)</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Digital elevation model DEM</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Digitales Höhenmodell DHM</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Modello digitale di elevazione DEM</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Modèle numérique d'altitude MNA</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>3D visualisation</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>3D Visualisierung</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>visualizzazione 3D</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Visualisation 3D</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Topography</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Topografie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Topografia</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Topographie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Spot height</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Höhenkote</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>quota altimetrica</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Cote d'altitude</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Countour line</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Höhenkurve, Höhenlinie</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Curva di livello</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Courbe de niveau</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </keyword>
+        <thesaurus REF="xN535266102" />
+      </GM03_2_1Core.Core.MD_Keywords>
+      <GM03_2_1Core.Core.MD_Thesaurus TID="xN535266102">
+        <citation REF="xN1877740140" />
+      </GM03_2_1Core.Core.MD_Thesaurus>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citation TID="xN1877740140">
+        <title>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>geocat.ch Thesaurus</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </title>
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citation>
+      <GM03_2_1Core.Core.CI_Date TID="xw425767aac31b1c13ac25b1b3b1">
+        <date>2015-12-16</date>
+        <dateType>publication</dateType>
+        <CI_Citation REF="xN1877740140" />
+      </GM03_2_1Core.Core.CI_Date>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+        <identifier REF="xN184247878" />
+        <CI_Citation REF="xN1877740140" />
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+      <GM03_2_1Core.Core.MD_Identifier TID="xN184247878">
+        <code>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>geonetwork.thesaurus.local._none_.geocat.ch</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </code>
+      </GM03_2_1Core.Core.MD_Identifier>
+      <GM03_2_1Core.Core.descriptiveKeywordsMD_Identification>
+        <descriptiveKeywords REF="xN1983226548" />
+        <MD_Identification REF="xN1518805464" />
+      </GM03_2_1Core.Core.descriptiveKeywordsMD_Identification>
+      <GM03_2_1Core.Core.MD_Keywords TID="xN1983226548">
+        <keyword>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Elevation</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Höhe</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Elevazione</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Altitude</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </keyword>
+        <thesaurus REF="xN1062925634" />
+      </GM03_2_1Core.Core.MD_Keywords>
+      <GM03_2_1Core.Core.MD_Thesaurus TID="xN1062925634">
+        <citation REF="xN1034876691" />
+      </GM03_2_1Core.Core.MD_Thesaurus>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citation TID="xN1034876691">
+        <title>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>GEMET - INSPIRE themes, version 1.0</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </title>
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citation>
+      <GM03_2_1Core.Core.CI_Date TID="xw425767aac31b1c15ab5b1b3b1">
+        <date>2008-06-01</date>
+        <dateType>publication</dateType>
+        <CI_Citation REF="xN1034876691" />
+      </GM03_2_1Core.Core.CI_Date>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+        <identifier REF="xN1140639443" />
+        <CI_Citation REF="xN1034876691" />
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+      <GM03_2_1Core.Core.MD_Identifier TID="xN1140639443">
+        <code>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>geonetwork.thesaurus.external.theme.inspire-theme</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </code>
+      </GM03_2_1Core.Core.MD_Identifier>
+      <GM03_2_1Core.Core.descriptiveKeywordsMD_Identification>
+        <descriptiveKeywords REF="xN1791631943" />
+        <MD_Identification REF="xN1518805464" />
+      </GM03_2_1Core.Core.descriptiveKeywordsMD_Identification>
+      <GM03_2_1Core.Core.MD_Keywords TID="xN1791631943">
+        <keyword>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>relief (land)</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Relief</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>rilievo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>relief</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </keyword>
+        <thesaurus REF="xN169928648" />
+      </GM03_2_1Core.Core.MD_Keywords>
+      <GM03_2_1Core.Core.MD_Thesaurus TID="xN169928648">
+        <citation REF="xN1040089941" />
+      </GM03_2_1Core.Core.MD_Thesaurus>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citation TID="xN1040089941">
+        <title>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>GEMET concepts</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </title>
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citation>
+      <GM03_2_1Core.Core.CI_Date TID="xw425767aac31b1c17ab5b1b3b1">
+        <date>2015-11-16</date>
+        <dateType>publication</dateType>
+        <CI_Citation REF="xN1040089941" />
+      </GM03_2_1Core.Core.CI_Date>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+        <identifier REF="xN1025918557" />
+        <CI_Citation REF="xN1040089941" />
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citationidentifier>
+      <GM03_2_1Core.Core.MD_Identifier TID="xN1025918557">
+        <code>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>geonetwork.thesaurus.external._none_.gemet</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </code>
+      </GM03_2_1Core.Core.MD_Identifier>
+      <GM03_2_1Comprehensive.Comprehensive.resourceConstraintsMD_Identification>
+        <resourceConstraints REF="xN1654334253" />
+        <MD_Identification REF="xN1518805464" />
+      </GM03_2_1Comprehensive.Comprehensive.resourceConstraintsMD_Identification>
+      <GM03_2_1Comprehensive.Comprehensive.MD_LegalConstraints TID="xN1654334253">
+        <useConstraints>
+          <GM03_2_1Comprehensive.Comprehensive.MD_RestrictionCode_>
+            <value>license</value>
+          </GM03_2_1Comprehensive.Comprehensive.MD_RestrictionCode_>
+        </useConstraints>
+      </GM03_2_1Comprehensive.Comprehensive.MD_LegalConstraints>
+      <GM03_2_1Core.Core.MD_Resolution TID="xN751459815">
+        <distance>200</distance>
+        <MD_DataIdentification REF="xN1518805464" />
+      </GM03_2_1Core.Core.MD_Resolution>
+      <GM03_2_1Core.Core.EX_Extent TID="xN123561616">
+        <description>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>DHM25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>MNT25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>MDT25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>DHM25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </description>
+        <MD_DataIdentification REF="xN1518805464" />
+      </GM03_2_1Core.Core.EX_Extent>
+      <GM03_2_1Core.Core.EX_ExtentgeographicElement>
+        <EX_Extent REF="xN123561616" />
+        <geographicElement REF="xN1029835409" />
+      </GM03_2_1Core.Core.EX_ExtentgeographicElement>
+      <GM03_2_1Core.Core.EX_GeographicDescription TID="xN1029835409">
+        <geographicIdentifier REF="xN679219077" />
+      </GM03_2_1Core.Core.EX_GeographicDescription>
+      <GM03_2_1Core.Core.MD_Identifier TID="xN679219077">
+        <code>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>DHM25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>MNT25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>MDT25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>DHM25</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>rm</language>
+                <plainText>null</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </code>
+      </GM03_2_1Core.Core.MD_Identifier>
+      <GM03_2_1Core.Core.EX_ExtentgeographicElement>
+        <EX_Extent REF="xN123561616" />
+        <geographicElement REF="xN307338303" />
+      </GM03_2_1Core.Core.EX_ExtentgeographicElement>
+      <GM03_2_1Core.Core.EX_BoundingPolygon TID="xN307338303">
+        <extentTypeCode>true</extentTypeCode>
+        <polygon>
+          <SURFACE>
+            <BOUNDARY>
+              <POLYLINE>
+                <COORD>
+                  <C1>9.744</C1>
+                  <C2>46.334</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.74</C1>
+                  <C2>46.226</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.513</C1>
+                  <C2>46.23</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.516</C1>
+                  <C2>46.302</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.288</C1>
+                  <C2>46.306</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.279</C1>
+                  <C2>46.019</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.053</C1>
+                  <C2>46.022</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.05</C1>
+                  <C2>45.932</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.076</C1>
+                  <C2>45.932</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.075</C1>
+                  <C2>45.914</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.275</C1>
+                  <C2>45.911</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.272</C1>
+                  <C2>45.803</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.821</C1>
+                  <C2>45.809</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.824</C1>
+                  <C2>45.917</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.599</C1>
+                  <C2>45.92</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.603</C1>
+                  <C2>46.135</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.377</C1>
+                  <C2>46.138</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.379</C1>
+                  <C2>46.246</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.171</C1>
+                  <C2>46.247</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.17</C1>
+                  <C2>46.139</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.15</C1>
+                  <C2>46.139</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.148</C1>
+                  <C2>45.923</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.89</C1>
+                  <C2>45.925</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.89</C1>
+                  <C2>45.911</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.709</C1>
+                  <C2>45.912</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.709</C1>
+                  <C2>45.925</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.471</C1>
+                  <C2>45.926</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.471</C1>
+                  <C2>45.818</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.021</C1>
+                  <C2>45.817</C2>
+                </COORD>
+                <COORD>
+                  <C1>7.02</C1>
+                  <C2>45.925</C2>
+                </COORD>
+                <COORD>
+                  <C1>6.794</C1>
+                  <C2>45.924</C2>
+                </COORD>
+                <COORD>
+                  <C1>6.792</C1>
+                  <C2>46.14</C2>
+                </COORD>
+                <COORD>
+                  <C1>5.976</C1>
+                  <C2>46.132</C2>
+                </COORD>
+                <COORD>
+                  <C1>5.977</C1>
+                  <C2>46.123</C2>
+                </COORD>
+                <COORD>
+                  <C1>5.951</C1>
+                  <C2>46.123</C2>
+                </COORD>
+                <COORD>
+                  <C1>5.951</C1>
+                  <C2>46.132</C2>
+                </COORD>
+                <COORD>
+                  <C1>5.886</C1>
+                  <C2>46.131</C2>
+                </COORD>
+                <COORD>
+                  <C1>5.867</C1>
+                  <C2>46.778</C2>
+                </COORD>
+                <COORD>
+                  <C1>6.325</C1>
+                  <C2>46.784</C2>
+                </COORD>
+                <COORD>
+                  <C1>6.316</C1>
+                  <C2>47.215</C2>
+                </COORD>
+                <COORD>
+                  <C1>6.779</C1>
+                  <C2>47.219</C2>
+                </COORD>
+                <COORD>
+                  <C1>6.773</C1>
+                  <C2>47.651</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.171</C1>
+                  <C2>47.65</C2>
+                </COORD>
+                <COORD>
+                  <C1>8.174</C1>
+                  <C2>47.866</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.576</C1>
+                  <C2>47.849</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.568</C1>
+                  <C2>47.633</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.033</C1>
+                  <C2>47.624</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.012</C1>
+                  <C2>47.192</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.474</C1>
+                  <C2>47.181</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.461</C1>
+                  <C2>46.965</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.921</C1>
+                  <C2>46.952</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.893</C1>
+                  <C2>46.521</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.46</C1>
+                  <C2>46.533</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.46</C1>
+                  <C2>46.529</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.44</C1>
+                  <C2>46.529</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.441</C1>
+                  <C2>46.534</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.209</C1>
+                  <C2>46.54</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.193</C1>
+                  <C2>46.216</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.096</C1>
+                  <C2>46.218</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.095</C1>
+                  <C2>46.205</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.043</C1>
+                  <C2>46.206</C2>
+                </COORD>
+                <COORD>
+                  <C1>10.044</C1>
+                  <C2>46.219</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.966</C1>
+                  <C2>46.221</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.971</C1>
+                  <C2>46.329</C2>
+                </COORD>
+                <COORD>
+                  <C1>9.744</C1>
+                  <C2>46.334</C2>
+                </COORD>
+              </POLYLINE>
+            </BOUNDARY>
+          </SURFACE>
+        </polygon>
+      </GM03_2_1Core.Core.EX_BoundingPolygon>
+      <GM03_2_1Core.Core.EX_ExtentgeographicElement>
+        <EX_Extent REF="xN123561616" />
+        <geographicElement REF="xN1392081234" />
+      </GM03_2_1Core.Core.EX_ExtentgeographicElement>
+      <GM03_2_1Core.Core.EX_GeographicBoundingBox TID="xN1392081234">
+        <extentTypeCode>true</extentTypeCode>
+        <northBoundLatitude>47.866</northBoundLatitude>
+        <southBoundLatitude>45.803</southBoundLatitude>
+        <eastBoundLongitude>10.921</eastBoundLongitude>
+        <westBoundLongitude>5.867</westBoundLongitude>
+      </GM03_2_1Core.Core.EX_GeographicBoundingBox>
+      <GM03_2_1Comprehensive.Comprehensive.revisionMD_Identification>
+        <revision REF="xN1827177367" />
+        <MD_Identification REF="xN1518805464" />
+      </GM03_2_1Comprehensive.Comprehensive.revisionMD_Identification>
+      <GM03_2_1Comprehensive.Comprehensive.MD_Revision TID="xN1827177367">
+        <revisionScope>
+          <GM03_2_1Core.Core.MD_ScopeCode_>
+            <value>dataset</value>
+          </GM03_2_1Core.Core.MD_ScopeCode_>
+        </revisionScope>
+        <revisionNote>http://www.swisstopo.admin.ch/internet/swisstopo/de/home/products/height/dhm25.parsysrelated1.41325.downloadList.52189.DownloadFile.tmp/dhm25peride.pdf</revisionNote>
+      </GM03_2_1Comprehensive.Comprehensive.MD_Revision>
+      <GM03_2_1Core.Core.DQ_DataQuality TID="xN1648933178">
+        <MD_Metadata REF="xN130166209" />
+      </GM03_2_1Core.Core.DQ_DataQuality>
+      <GM03_2_1Core.Core.DQ_Scope TID="xN1068176772">
+        <level>dataset</level>
+        <DQ_DataQuality REF="xN1648933178" />
+      </GM03_2_1Core.Core.DQ_Scope>
+      <GM03_2_1Core.Core.LI_Lineage TID="xN1302802693">
+        <statement>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Interpolation aus der Höheninformation der Landeskarte 1:25'000 abgeleitet, der Landeskarte 1:50'000 im erweiterten Perimeter.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Interpolation basée sur les informations d'altitude de la Carte nationale 1:25'000 et de la Carte nationale 1:50'000 pour le périmètre élargi.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>en</language>
+                <plainText>Interpolation based on the elevation information of the National map 1:25'000, of the National map 1:50'000 for the extended perimeter.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </statement>
+        <DQ_DataQuality REF="xN1648933178" />
+      </GM03_2_1Core.Core.LI_Lineage>
+      <GM03_2_1Comprehensive.Comprehensive.MD_MetadatalegislationInformation>
+        <MD_Metadata REF="xN130166209" />
+        <legislationInformation REF="xw425767aac43b1" />
+      </GM03_2_1Comprehensive.Comprehensive.MD_MetadatalegislationInformation>
+      <GM03_2_1Comprehensive.Comprehensive.MD_Legislation TID="xw425767aac43b1">
+        <country>
+          <CodeISO.CountryCodeISO_>
+            <value>CH</value>
+          </CodeISO.CountryCodeISO_>
+        </country>
+        <language>
+          <CodeISO.LanguageCodeISO_>
+            <value>de</value>
+          </CodeISO.LanguageCodeISO_>
+          <CodeISO.LanguageCodeISO_>
+            <value>fr</value>
+          </CodeISO.LanguageCodeISO_>
+          <CodeISO.LanguageCodeISO_>
+            <value>it</value>
+          </CodeISO.LanguageCodeISO_>
+        </language>
+        <legislationType>nationalDecree</legislationType>
+        <internalReference>
+          <GM03_2_1Core.Core.CharacterString_>
+            <value>510.620</value>
+          </GM03_2_1Core.Core.CharacterString_>
+        </internalReference>
+        <title REF="xN1681284181" />
+      </GM03_2_1Comprehensive.Comprehensive.MD_Legislation>
+      <GM03_2_1Comprehensive.Comprehensive.CI_Citation TID="xN1681284181">
+        <title>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Verordnung über Geoinformation</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Ordonnance sur la géoinformation : Annexe 1, Catalogue des géodonnées de base relevant du droit fédéral</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Ordinanza sulla geoinformazione : Allegato 1, Catalogo dei geodati di base del diritto federale</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </title>
+        <alternateTitle>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Geoinformationsverordnung GeoIV</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>OGéo</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>OGI</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </alternateTitle>
+        <otherCitationDetails>
+          <GM03_2_1Core.Core.PT_FreeText>
+            <textGroup>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>de</language>
+                <plainText>Im Anhang 1 werden alle Geodaten aufgelistet, welche über ein gesetzliche Grundlage auf Bundesebene verfügen.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>it</language>
+                <plainText>Questo elenco contiene tutti i geodati di base del diritto federale.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+              <GM03_2_1Core.Core.PT_Group>
+                <language>fr</language>
+                <plainText>Dans l'annexe 1 sont listées toutes les géodonnées de base de droit fédéral.</plainText>
+              </GM03_2_1Core.Core.PT_Group>
+            </textGroup>
+          </GM03_2_1Core.Core.PT_FreeText>
+        </otherCitationDetails>
+      </GM03_2_1Comprehensive.Comprehensive.CI_Citation>
+      <GM03_2_1Core.Core.CI_Date TID="xw425767aac43b1c13b1b5b1">
+        <date>2008-05-21</date>
+        <dateType>creation</dateType>
+        <CI_Citation REF="xN1681284181" />
+      </GM03_2_1Core.Core.CI_Date>
+      <GM03_2_1Core.Core.CI_Date TID="xw425767aac43b1c13b1b7b1">
+        <date>2008-07-01</date>
+        <dateType>publication</dateType>
+        <CI_Citation REF="xN1681284181" />
+      </GM03_2_1Core.Core.CI_Date>
+    </GM03_2_1Comprehensive.Comprehensive>
+  </DATASECTION>
+</TRANSFER>
+
